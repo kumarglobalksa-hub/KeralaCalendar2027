@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F6F8F6">
+    <TextView android:id="@+id/appTitle" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Kerala Calendar 2027"
+        android:textSize="22sp" android:textStyle="bold" android:textColor="#173B32"
+        android:paddingStart="20dp" android:paddingTop="18dp" android:paddingBottom="12dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="10dp" android:paddingBottom="8dp">
+        <Button android:id="@+id/tabCalendar" android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="Calendar" android:textAllCaps="false"/>
+        <Button android:id="@+id/tabEvents" android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="My Events" android:textAllCaps="false"/>
+        <Button android:id="@+id/tabPdf" android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="Original PDF" android:textAllCaps="false"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/contentFrame" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
